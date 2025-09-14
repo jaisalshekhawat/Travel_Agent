@@ -56,4 +56,4 @@ AZURE_OPENAI_API_KEY=your_api_key
 AZURE_OPENAI_CHAT_DEPLOYMENT=your_deployment_name
 
 Run the project
-python chat_completion.py
+python agent.py
