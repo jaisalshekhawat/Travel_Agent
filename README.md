@@ -22,3 +22,38 @@ Travel_Agent/
 ├── .env # Environment variables (not tracked in GitHub)
 ├── requirements.txt # Python dependencies
 └── README.md # Project documentation
+
+
+---
+
+## ⚙️ Setup & Installation
+
+Follow these steps to set up and run the project:
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/jaisalshekhawat/Travel_Agent.git
+cd Travel_Agent
+
+# On Windows
+python -m venv venv
+venv\Scripts\activate
+
+# On Linux/Mac
+python3 -m venv venv
+source venv/bin/activate
+
+pip install -r requirements.txt
+
+If you don’t have a requirements.txt, create one with:
+pip install openai python-dotenv
+pip freeze > requirements.txt
+
+Create a .env file in the project root and add your Azure OpenAI credentials:
+AZURE_OPENAI_ENDPOINT=your_azure_openai_endpoint
+AZURE_API_VERSION=2023-07-01-preview
+AZURE_OPENAI_API_KEY=your_api_key
+AZURE_OPENAI_CHAT_DEPLOYMENT=your_deployment_name
+
+Run the project
+python chat_completion.py
